@@ -1,0 +1,577 @@
+@font-face{
+	font-family: pixel_a;
+	src:url('../fonts/andina.ttf');
+}
+
+@font-face{
+	font-family: pixel_b;
+  src:url('../fonts/Retron2000.ttf';
+}
+
+
+body{
+	font-family: pixel_a;
+  margin: 0;
+}
+
+/* intro */
+
+header .intro {
+	color: #fff;
+	background: url(../img/retro.jpg)  center / cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.intro .intro_text {
+  padding: 23% 20% 15% 13%;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.intro .intro_text p {
+	font-size: 20px;
+}
+
+/* Navigation */
+
+nav {
+    background:transparent;
+    list-style: none;
+    display:flex;
+    float: right;
+    margin-top: -5vh;
+    color: white;
+  }
+
+nav a{
+    list-style: none;
+    float: right;
+    padding-right: 15px;
+    padding-top: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav a:hover {
+    color:lightsteelblue;
+  }
+
+nav img{
+    width:23px;
+    height:23px;
+}
+
+/* about me */
+
+#me {
+  height: 100%;
+  width: 100%;
+  background-color:#f7f8f9;
+  color:black;
+}
+
+#me .me_wrap {
+  padding:12% 8% 7% 12%;
+}
+#me .me_row {
+    display: flex;
+    flex-direction: row;
+  }
+#me .me_column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: 100%;
+  }
+#me .me_column .me_{
+  margin-left: 19%;
+  padding-top: 10%;
+}
+#me .me_column .me_ h2{
+	transition: all 0.8s;
+  width: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+#me .me_column .me_ h2:hover{
+	transform: rotate(180deg);
+  cursor:pointer;
+}
+#me .me_avatar img{
+    width: 200px;
+    height: 200px;
+    mix-blend-mode: darken;
+}
+#me p{
+    display: table;
+    position: static;
+    font-family:pixel_b;
+    font-size: 15px;
+
+}
+#me p img{
+  height: 18px;
+  width: 18px;
+}
+
+  
+/* skills */
+
+#love{
+    width: 100%;
+    height: 100%;
+    background-color:#1e1e1e;
+    color: #4e4e4e;
+}
+#love .skill{
+    padding: 10% 8% 5% 15%;;
+}
+
+#love .skill .skill_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  #love .skill_column {
+    flex: 1;
+  }
+
+  #love .skill_column .skill_colunm_g1,  #love .skill_column .skill_colunm_g2{
+    margin-top: 150px;
+
+  }
+  #love .skill_column .skill_colunm_g2{
+    margin-left: -120px;
+
+  }
+  #love .skill_column .skill_colunm_g3{
+    
+  }
+  #love .skill_column .skill_colunm_g3 ul{
+    list-style: none;
+    font-family:pixel_b;
+    font-size: 15px;
+    margin-left: -40px;
+  }
+  #love div.progress_full_red {
+    background-color:#841b2d
+    ;
+    box-shadow: 1px 2px 1px #560319;
+    border-radius: 50px;
+    height: 20px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom:130px;
+    color:#424242;
+    font-size: 12px;
+  }
+
+  #love div.progress_full_blue {
+    background-color:#22316C	;
+    ;
+    box-shadow: 1px 2px 1px #000033;
+    border-radius: 50px;
+    height: 20px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom:130px;
+    color:#424242;
+    font-size: 12px;
+
+  }
+#love div #progress{
+    width: 100%;
+
+}
+#love .skill_html {
+    animation: html_ 5s normal forwards;
+    box-shadow: 4px 1px 1px #1e1e1e;
+    background: #f08080;
+    opacity: 25%;
+    border-radius: 50px;
+    height: 20px;
+  }
+
+  @keyframes html_ {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+
+  div .skill_css {
+    animation: css_ 5s normal forwards;
+    box-shadow: 4px 1px 1px #1e1e1e;
+    background: #f08080;
+    opacity: 25%;
+    border-radius: 50px;
+    height: 20px;
+  }
+
+  @keyframes css_ {
+    0% { width: 0; }
+    100% { width: 70%; }
+  }
+ div .skill_javascript {
+  animation: javascript_ 5s normal forwards;
+  box-shadow: 4px 1px 1px #1e1e1e;
+  background: #f08080;
+  opacity: 25%;
+  border-radius: 50px;
+  height: 20px;
+ }
+ @keyframes javascript_ {
+    0% { width: 0; }
+    100% { width: 55%; }
+  }
+
+  div .skill_photoshop {
+    animation: photoshop_ 5s normal forwards;
+    box-shadow: 4px 1px 1px #1e1e1e;
+    background: #60AFFE;
+    opacity: 25%;
+    border-radius: 50px;
+    height: 20px;
+ }
+ @keyframes photoshop_ {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+  div .skill_illustrator {
+    animation: illustrator_ 5s normal forwards;
+    box-shadow: 4px 1px 1px #1e1e1e;
+    background: #60AFFE;
+    opacity: 25%;
+    border-radius: 50px;
+    height: 20px;
+ }
+ @keyframes illustrator_ {
+    0% { width: 0; }
+    100% { width: 30%; }
+  }
+  div .skill_premier {
+    animation: premier_ 5s normal forwards;
+    box-shadow: 4px 1px 1px #1e1e1e;
+    background: #60AFFE;
+    opacity: 25%;
+    border-radius: 50px;
+    height: 20px;
+ }
+ @keyframes premier_ {
+    0% { width: 0; }
+    100% { width: 40%; }
+  }
+
+  /*portfolio */
+  
+  #code{
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color:#bbbbbb;
+    font-family:pixel_b;
+    font-size: 15px;
+    color: #595959;
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  #code span{
+    padding: 3px;
+    color: #bbbbbb;
+    background-color: #3b434a ;
+  }
+  .resume{
+    padding:10% 10% 10% 15%;
+  }
+  .resume .resume_row .resume_item{
+    margin-bottom: 70px;
+  }
+  .resume ul{
+    font-size: 14px;
+  }
+  .resume .resume_row{
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+  }
+  .resume .resume_row .resume_column_edu{
+    display: table;
+    width: 25%;
+    margin-left: 13%;
+  }
+  .resume .resume_row .resume_column_wrk{
+    display: table;
+    width: 55%;
+  }
+  .resume .resume_title {
+    color: #3b434a;
+    font-family: pixel_a;
+  }
+  
+  .resume .resume_row h3, .resume .resume_row h4 {
+    color: #3b434a;
+    font-family: pixel_a;
+  }
+  
+  .resume .resume_row .resume_column_wrk h2{
+    margin-bottom: 9%;
+  }
+  .resume .resume_row .resume_column_edu h2{
+    margin-bottom: 20%;
+  }
+
+
+/*portfolio*/
+
+#run{
+
+  height: 100%;
+  background-color:
+  #c3cccb;
+  color: #F0F0F0;
+  margin-top: -3%;
+}
+#run h2{
+  color: maroon;
+  margin-bottom: 40px;
+  margin-left: 25px;
+}
+#love span, #run span{
+  background-color: magenta;
+  padding: 3px;
+}
+
+
+.run_portfolio{
+ padding: 100px 150px 150px 290px;
+  
+}
+#run .run_portfolio .run_row{
+	display: flex;
+  flex: wrap;
+	flex-direction: row;
+}
+
+.run_row .run_column .portfolio_item {
+  margin: 1.5rem;
+
+}
+#run .run_portfolio .run_row img{
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+}
+.portfolio_item .hover_1 img{
+	transition: all 0.2s;
+}
+.portfolio_item .hover_1:hover img {
+	transform: scale(1.1) rotate(2deg);
+  opacity: 0.7;
+}
+.portfolio_item .hover_2 img{
+	transition: all 0.5s;
+}
+.portfolio_item .hover_2:hover img {
+	transform: scale(1.15);
+  opacity: 0.7;
+}
+.hover_1 .hover_text, .hover_2 .hover_text{
+	opacity: 0;
+	color: #8c2e3e;
+
+	transition: all 0.2s;
+  text-decoration: none;
+}
+#run a{
+  text-decoration: none;
+}
+.hover_1:hover .hover_text, .hover_2:hover .hover_text{
+	opacity: 0.8;
+}
+
+#shell {
+	color: #121d1f;
+	background-color:
+  #76949e;
+    flex-basis: 100%;
+    width: 100%;
+    color:whitesmoke;
+  margin-top: -50px;
+}
+.shell_row{
+  padding-left: 300px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+
+}
+.shell_row .shell_wrapper{
+  flex-shrink: 50%;
+}
+
+.shell_column{
+  padding-bottom: 30px;
+}
+.shell_column a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.shell_column a:hover{
+  opacity: 0.4;
+}
+.shell_column img{
+  width: 30px;
+  height: 30px;
+  margin-bottom: -7px;
+  margin-right: 10px;
+}
+
+
+
+.shell_column p{
+  margin-left: 33px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family:
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#007bb5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 180px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: pixel_a;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  opacity: 0.6;
+}
+textarea{
+  height: 180px;
+}
+
+
+.container {
+  background-color: #76949e;
+  padding-top: 20px;
+  padding-left: 120px;
+  width: 50%;
+
+}
+
+.social_media {
+display: table;
+position:static;
+margin: 0 auto;
+padding-bottom: 50px;
+padding-top: 40px;
+}
+.social_media a{
+margin: 0 7px;
+}
+.fa {
+  padding: 5px 1px 5px 1px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  mix-blend-mode: lighten;
+  opacity: 70%;
+  border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+
+
+#footer{
+background-color:
+#232527;
+line-height: 8vh;
+height: 8vh;
+width: 100%;
+color: white;
+text-align: center;
+}
+
+
+
+
